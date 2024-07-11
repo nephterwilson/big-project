@@ -1,0 +1,383 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #008080; /* Teal */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+        background-color: #00bfff; /* Light Blue */
+        border: none;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #008080; /* Teal */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #008080; /* Teal */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Landing Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/landing-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#login-form {
+    background: #008080; /* Teal */
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#login-form img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+#login-form h1 {
+    margin-bottom: 20px;
+}
+
+#login-form input, #login-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#login-form input {
+    background-color: #fff;
+    color: #333;
+}
+
+#login-form button {
+    background-color: #00bfff; /* Light Blue */
+    color: #fff;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+/* Banner Section */
+.banner-section {
+    background: url('banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #00bfff; /* Light Blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+/* Flex Boxes */
+.flex-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-section {
+    padding: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #00bfff; /* Light Blue */
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+/* About and Services Sections */
+.about-section, .services-section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #008080; /* Teal color */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #008080; /* Teal color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    max-width: 120px; /* Adjust logo size */
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 15px; /* Space between menu items */
+}
+
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .toggle-button {
+    display: none; /* For small screens, you'll have a toggle button */
+}
+
+/* About Page Styles */
+.about-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-item {
+    flex: 1 1 300px; /* Adjust as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-item h2 {
+    color: #008080; /* Teal color */
+}
+
+.about-item p {
+    color: #666;
+}
+
+/* Services Page Styles */
+.services-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    flex: 1 1 300px; /* Adjust as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h2 {
+    color: #008080; /* Teal color */
+}
+
+.service-item p {
+    color: #666;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #008080; /* Teal color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* Hide menu on small screens */
+    }
+
+    .navbar .toggle-button {
+        display: block; /* Show toggle button */
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .navbar .toggle-button:hover {
+        cursor: pointer;
+    }
+
+    /* Add a simple mobile menu */
+    .navbar .toggle-button.active + .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #008080;
+        padding: 10px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+
+    .navbar .toggle-button.active + .menu a {
+        color: #fff;
+        font-size: 18px;
+    }
+}
